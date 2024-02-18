@@ -7,33 +7,29 @@ const {
   landing,
   landingText,
   landingImage,
-  landingNavigationWrapper
+  landingNavigationWrapper,
 } = styles;
 
 export default function Landing(): JSX.Element {
   return (
-    <div className={ wrapper }>
-      <div className={ landing }>
-        <div className={ landingText }>
-          <h1>PWA Boilerplate</h1>
+    <div className={wrapper}>
+      <div className={landing}>
+        <div className={landingText}>
+          <h1>Form PWA</h1>
           <p>
-            Designed to help you kick-start your next project.<br />
-            This boilerplate is production ready and comes with 
-            a service worker, redux store, dark-mode, router, and plenty other useful features.
+            Designed to make form submission easy.
+            <br />
+            This app is NOT production ready and is for testing purposes only.
           </p>
         </div>
-        <div className={ landingNavigationWrapper }>
-          <a
-            href="https://github.com/tomburgs/pwa-boilerplate"
-            target="_blank"
-            rel="noreferrer"
-          >
-          View source code on GitHub
+        <div className={landingNavigationWrapper}>
+          <a href="https://marcustwilson.com/" target="_blank" rel="noreferrer">
+            Learn about the Developer
           </a>
-          <p>Available under MIT license</p>
+          <p>Privately developed by Marcus</p>
         </div>
         <Image
-          className={ landingImage }
+          className={landingImage}
           src="/assets/landing.png"
           alt="Desktop & Mobile PWA Application"
           width="450px"
